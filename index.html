@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hiskihar</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="menu-stage">
+        <div class="menu">
+            <div class="menuRow1">
+                <div class="r0 c0 nw">
+                    <img src="highlight_elements/nw.png" class="glassHighlight">
+                    <img src="shadow_elements/nw.png" class="glassShadow">
+                </div>
+                <div class="r0 c1 n ">
+                    <img src="highlight_elements/n.png" class="glassHighlight">
+                    <img src="shadow_elements/n.png" class="glassShadow">
+                </div>
+                <div class="r0 c2 ne">
+                    <img src="highlight_elements/ne.png" class="glassHighlight">
+                    <img src="shadow_elements/ne.png" class="glassShadow">
+                </div>
+            </div>
+            <div class="menuRow2">
+                <div class="r1 c0 w ">
+                    <img src="highlight_elements/w.png" class="glassHighlight">
+                    <img src="shadow_elements/w.png" class="glassShadow">
+                </div>
+                <div class="r1 c1 m ">
+                </div>
+                <div class="r1 c2 e ">
+                    <img src="highlight_elements/e.png" class="glassHighlight">
+                    <img src="shadow_elements/e.png" class="glassShadow">
+                </div>
+            </div>
+            <div class="menuRow3">
+                <div class="r2 c0 sw">
+                    <img src="highlight_elements/sw.png" class="glassHighlight">
+                    <img src="shadow_elements/sw.png" class="glassShadow">
+                </div>
+                <div class="r2 c1 s ">
+                    <img src="highlight_elements/s.png" class="glassHighlight">
+                    <img src="shadow_elements/s.png" class="glassShadow">
+                </div>
+                <div class="r2 c2 se">
+                    <img src="highlight_elements/se.png" class="glassHighlight">
+                    <img src="shadow_elements/se.png" class="glassShadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main column">
+        <div class="main-element row">
+            <h1>
+                Liquid glass demo
+            </h1>
+        </div>
+        <div class="main-element column text">
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+            </p>
+            <p class="paragraph">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+            <p class="paragraph">
+                But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+            </p>
+        </div>
+
+        <div class="main-element">
+
+            <img src="mountains.jpg" />
+
+
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <defs>
+                    <filter id="n" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/n.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="1920px" height="64px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1"    in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2"    in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3"    in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="ne" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/ne.png" result="dispMap" x="0" y="0" width="64px" height="64px" filterUnits="userSpaceOnUse" primitiveUnits="objectBoundingBox" preserveAspectRatio="none"/>
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="112" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="128" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="e" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/e.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="64px" height="1080px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values=" 1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="se" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/se.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="64px" height="64px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values=" 1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/s.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="1920px" height="64px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="sw" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/sw.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="64px" height="64px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="w" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/w.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="64px" height="1080px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="nw" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feImage href="disp_elements/nw.png"
+                                 result="dispMap"
+                                 x="0" y="0" width="64px" height="64px"
+                                 filterUnits="userSpaceOnUse"
+                                 primitiveUnits="objectBoundingBox"
+                                 preserveAspectRatio="none"/>
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feDisplacementMap in="red" in2="dispMap" scale="116" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="red_" />
+                        <feDisplacementMap in="yel" in2="dispMap" scale="118" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="yel_" />
+                        <feDisplacementMap in="gre" in2="dispMap" scale="120" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="gre_" />
+                        <feDisplacementMap in="cya" in2="dispMap" scale="122" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="cya_" />
+                        <feDisplacementMap in="blu" in2="dispMap" scale="124" xChannelSelector="R" yChannelSelector="G" primitiveUnits="userSpaceOnUse" result="blu_" />
+                        <feBlend in="red_" in2="yel_" mode="screen" result="1" />
+                        <feBlend in="1" in2="gre_" mode="screen" result="2" />
+                        <feBlend in="2" in2="cya_" mode="screen" result="3" />
+                        <feBlend in="3" in2="blu_" mode="screen" />
+                    </filter>
+
+
+
+                    <filter id="m" x="-20%" y="-20%" width="140%" height="140%"
+                            color-interpolation-filters="sRGB">
+
+                        <feGaussianBlur in="SourceGraphic"
+                                        stdDeviation="1"
+                                        result="blurred" />
+                        <feColorMatrix values="1  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="red" />
+                        <feColorMatrix values=".2  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="yel"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  1  0  0 0
+                                                0  0  0  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="gre"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0 .2  0  0 0
+                                                0  0 .2  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="cya"/>
+                        <feColorMatrix values=" 0  0  0  0 0
+                                                0  0  0  0 0
+                                                0  0 1  0 0
+                                                0  0  0  1 0" type="matrix" x="0%" y="0%" width="100%" height="100%" in="blurred" result="blu"/>
+
+                        <feBlend in="red" in2="yel" mode="screen" result="1" />
+                        <feBlend in="1"    in2="gre" mode="screen" result="2" />
+                        <feBlend in="2"    in2="cya" mode="screen" result="3" />
+                        <feBlend in="3"    in2="blu" mode="screen" />
+
+                    </filter>
+
+
+
+
+
+
+
+                </defs>
+            </svg>
+
+
+
+        </div>
+        <div class="footer row">
+            <div class="footer-info column">
+                <h3>HISKI</h3>
+                <h3>HARKONEN</h3>
+            </div>
+            <div class="footer-info column">
+                <p class="footer-text">
+                    On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by charms of pleasure of the moment.
+                </p>
+            </div>
+            <div class="footer-info column">
+                <p class="footer-text">
+                    In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+
+
+
+
+</html>
+
